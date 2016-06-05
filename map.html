@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header container clearfix">
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a class="main nav info" href="#">информация</a>
+        </li>
+        <li>
+          <a class="main-nav photovideo" href="#">фото и видео</a>
+        </li>
+        <li>
+          <a href="index.html">
+            <img class="main-nav-inner logo" src="img/headerlogo.png" alt="Logo" width="138" height="70">
+          </a>
+        </li>
+        <li>
+          <a class="main-nav statemap" href="catalog.html">гостиницы</a>
+        </li>
+        <li>
+          <a class="main-nav hotels" href="#">карта штата</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <div class="static-map"></div>
+    <div class="search-form-inner">
+      <form action="#" method="post">
+        <div class="labels">
+          <label for="date-in">дата заезда:</label>
+          <label for="date-out">дата выезда:</label>
+          <label for="adults" class="adults">взрослые:</label>
+        </div>
+        <div class="forms">
+          <input id="date-in" class="date date-in" type="text" name="checkin" value="24 апреля 2016" required>
+          <button class="calendar calendar-in"></button>
+          <input id="date-out" class="date date-out" type="text" name="checkout" value="4 июля 2016" required>
+          <button class="calendar calendar-out"></button>
+          <div class="counter adults">
+            <button class="adult-btn-m"></button>
+            <input id="adults" class="counter-form" type="text" name="adult" value="2" required>
+            <button class="adult-btn-p"></button>
+          </div>
+          <label for="kids">дети:</label>
+          <div class="counter kids">
+            <button class="kids-btn-m"></button>
+            <input id="kids" class="counter-form" type="text" name="kids" value="0" required>
+            <button class="kids-btn-p"></button>
+          </div>
+        </div>
+        <input class="form-search-btn" type="submit" name="name" value="найти">
+      </form>
+    </div>
+  <footer class="main-footer-inner container clearfix ">
+    <section class="visitsedona clearfix">
+      <span>#visitsedona</span>
+    </section>
+    <section class="footer-social clearfix">
+      <a class="social-btn social-btn-twt" href="#">Twitter</a>
+      <a class="social-btn social-btn-fb" href="#">Facebook</a>
+      <a class="social-btn social-btn-ytb" href="#">Youtube</a>
+    </section>
+    <section class="footer-copyright clearfix">
+      website by
+      <a class="footer-logo" href="htmlacademy.ru"></a>
+    </section>
+  </footer>
+</body>
+</html>
